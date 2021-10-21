@@ -1,0 +1,254 @@
+body {
+  font-family: Nunito, sans-serif;
+  color: #1c1c1c;
+}
+
+h1,
+h2,
+h3 {
+  font-family: Asap, sans-serif;
+  color: #000000;
+}
+
+.botao {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 30px;
+  background-color: #eb69f7;
+  font-size: 0.9em;
+  border-radius: 3px;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #910091;
+}
+
+nav > a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 32px;
+  font-family: Yellowtail, serif;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+nav ul li {
+  text-align: center;
+  width: 100%;
+}
+
+nav ul li a {
+  display: inline-block;
+  padding: 10px 0;
+  width: 100%;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../img/flo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #0e004b;
+  text-align: center;
+  padding: 20px;
+}
+
+header h1 {
+  color: #0e004b;
+}
+
+header p {
+  margin-bottom: 2em;
+}
+
+#sobre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 10px 10px 20px 20px;
+  background-color: #910091;
+  color: #ffffff;
+}
+
+#sobre h2 {
+  color: #ffffff;
+}
+
+#sobre p {
+  margin-bottom: 2.5em;
+  max-width: 1000px;
+}
+
+#sobre .botao {
+  background-color: #f1f1f1;
+  color: #1c1c1c;
+}
+
+#Serviços {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+
+#Serviços div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 30px;
+}
+
+#Fotos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+#Fotos h2 {
+  margin-bottom: 20px;
+}
+
+#Fotos img {
+  width: 100%;
+}
+
+#Contato {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+#Contato h2 {
+  color: black;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #910091;
+  color: #ffffff;
+}
+
+footer a {
+  text-decoration: none;
+  color: rgb(247, 161, 255);
+}
+
+@media screen and (min-width: 768px) {
+  nav {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  nav ul {
+    flex-direction: row;
+    width: 70%;
+  }
+
+  header {
+    height: 600px;
+    height: 60vh;
+    justify-content: center;
+  }
+
+  #Sobre {
+    height: 250px;
+    height: 30vh;
+    justify-content: center;
+    min-height: 250px;
+  }
+
+  #Serviços {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  #erviços h2 {
+    text-align: center;
+    width: 100%;
+  }
+
+  #Serviços div {
+    flex-grow: 1;
+    flex-basis: 150px;
+    padding: 0 10px;
+  }
+
+  #Fotos {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  #Fotos h2 {
+    width: 100%;
+    text-align: center;
+  }
+
+  #Fotos img {
+    width: 33.3333333%;
+  }
+
+  #Contato {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  #Contato h2,
+  #Contato p {
+    width: 100%;
+  }
+
+  #Formulario {
+    display: flex;
+    height: 1000px;
+    height: 10vh;
+    justify-content: center;
+    min-height: 70px;
+    text-align: center;
+    padding: 10px;
+    background-color: #910091;
+    color: #ffffff;
+    width: 100%;
+  }
+
+  #textos {
+    height: 100px;
+    height: 10vh;
+    justify-content: center;
+    text-align: center;
+    font-family: Yellowtail, serif;
+    font-weight: 550;
+    font-size: 18px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    width: 100%;
+    color: black;
+  }
+}
